@@ -55,6 +55,82 @@ public class Main {
         //Sukurti kintamąjį su stringu: “An American in Paris”. Jame visas “a” (didžiąsias ir mažąsias)
         // pakeisti žvaigždutėm “*”.  Rezultatą atspausdinti.
 
+        String kint = "An American in Paris";
+
+        System.out.println(kint.replace("a","*").replace("A","*"));
+
+        System.out.println(kint.replaceAll(("[AaEeIiOoUuYy]") , ""));
+
+        System.out.println("/////// 6 uzduotis ///////");
+
+        //Sukurti kintamąjį su stringu: “An American in Paris”. Jame ištrinti visas balses. Rezultatą atspausdinti.
+        // Kodą pakartoti su stringais: “Breakfast at Tiffany's”, “2001: A Space Odyssey” ir “It's a Wonderful Life”.
+
+        System.out.println(kint.replace("A","")
+                .replace("e","")
+                .replace("i","")
+                .replace("a",""));
+
+            String kint1 = "Breakfast at Tiffany's";
+
+        System.out.println(kint1.replace("e","")
+                .replace("a","")
+                .replace("i","")
+                .replace("y",""));
+
+            String kint2 = "2001: A Space Odyssey";
+        System.out.println(kint2.replace("A","")
+                .replace("a","")
+                .replace("e","")
+                .replace("O","")
+                .replace("y",""));
+
+            String kint3 = "It's a Wonderful Life";
+        System.out.println(kint3.replace("I","")
+                .replace("a","")
+                .replace("o","")
+                .replace("e","")
+                .replace("u","")
+                .replace("i",""));
+
+            System.out.println("KITAS VARIANTAS, kuri geriausia naudoti");
+
+            System.out.println(kint.replaceAll(("[AaEeIiOoUuYy]") , ""));
+            System.out.println(kint1.replaceAll(("[AaEeIiOoUuYy]") , ""));
+            System.out.println(kint2.replaceAll(("[AaEeIiOoUuYy]") , ""));
+            System.out.println(kint3.replaceAll(("[AaEeIiOoUuYy]") , ""));
+
+            System.out.println("/////// 7 uzduotis ///////");
+
+            //Stringe, kurį generuoja toks kodas:
+            // "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int)
+            // (Math.random() * 7)+1) + " - A New Hope" Surasti ir atspausdinti epizodo numerį.
+
+            String episode = "Star Wars: Episode " + " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope";
+            System.out.println(episode);
+            System.out.println("ep.numb:" + episode.replaceAll("[^0-9.]", ""));
+
+            System.out.println("KITAS VARIANTAS");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
