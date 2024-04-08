@@ -1,5 +1,7 @@
 import java.sql.SQLOutput;
 
+import static java.awt.SystemColor.text;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello world!");
@@ -110,15 +112,23 @@ public class Main {
             System.out.println(episode);
             System.out.println("ep.numb:" + episode.replaceAll("[^0-9.]", ""));
 
-            System.out.println("KITAS VARIANTAS");
+           // System.out.println("KITAS VARIANTAS");
+          System.out.println("PAPILDOMOS UZDUOTYS");
+        System.out.println("/////// 8 uzduotis ///////");
 
+        //8.Suskaičiuoti kiek stringe “Don't Be a Menace to South Central While Drinking Your Juice in the Hood” yra žodžių trumpesnių
+        // arba lygių nei 5 raidės. Pakartokite kodą su stringu “Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale”.
 
+        // Pirmas kintamasis
+        String string1 = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
+        int shortWordsCount1 = countShortWords (string1);
+        System.out.println("Pirmojo stringo '{string1}' trumpesnių arba lygių nei 5 raidės žodžių skaičius: {shortWordsCount1}");
 
-
-
-
-
-
+        // Antras kintamasis
+        String string2 = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
+        int shortWordsCount2 = countShortWords(string2);
+        System.out.println("Antrojo stringo '{string2}' trumpesnių arba lygių nei 5 raidės žodžių skaičius: {shortWordsCount2}");
+    }
 
 
 
